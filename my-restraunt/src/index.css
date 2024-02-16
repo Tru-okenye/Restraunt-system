@@ -1,0 +1,365 @@
+.about{
+display: grid;
+grid-template-columns: auto auto;
+justify-content: center;
+}
+/* .img{
+   
+    
+} */
+.img img{
+    width: 100%;
+    height: 450px;
+    margin-top: 2rem;
+}
+.services {
+    margin-top: 2rem;
+}
+iframe{
+    width: 100%;
+     height:450px;
+     border: 0;
+}
+.even-categorys,
+.odd-categorys {
+    clear: both;
+    margin: 20px 0;
+    overflow: auto;
+}
+
+.even-categorys .category-details {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.odd-categorys .category-details {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.even-categorys .food-items {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.category-details{
+  margin-top: 3rem;
+}
+
+.odd-categorys .food-items {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+.category-details img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+
+    .even-categorys,
+    .odd-categorys {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 100%;
+      
+    }
+
+    .category-details,
+    .food-items {
+        float: none;
+        width: 100%;
+        padding: 10px;
+        display: grid;
+       
+        background-color: red;
+        margin-left: 5rem;
+
+    }
+   
+}
+
+
+
+.menu-item {
+    margin: 10px 0;
+    margin-top: 4rem;
+}
+
+.menu-item img {
+    max-width: 100px;
+    /* Adjust image width as needed */
+    max-height: 100px;
+    /* Adjust image height as needed */
+}
+
+.menu-item-details h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.menu-item-details p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+.food-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.food-item img {
+  max-width: 100px; /* Adjust image width as needed */
+  max-height: 100px; /* Adjust image height as needed */
+}
+
+.menu-item-details {
+  flex: 1;
+  padding: 0 20px; /* Adjust spacing as needed */
+}
+
+.menu-item-details h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.menu-item-details p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+
+
+
+/* food item */
+.all {
+    
+    display: flex;
+        /* flex-wrap: wrap; */
+        /* Wrap items to the next row on smaller screens */
+        justify-content: space-between;
+        /* Space items evenly in a row */
+
+}
+.food-item {
+  display: flex;
+flex-direction: column;
+margin-top: 3rem;
+   
+background-color: brown;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+   
+    align-items: center;
+}
+
+
+
+.food-item img {
+ max-width: 100%;
+ height: auto;
+}
+
+.food-item h3, .food-item p {
+  margin: 5px 0;
+}
+
+.headings {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  
+}
+.menu-headings {
+  display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: red;
+}
+/* Media query for smaller screens to display in a single column */
+@media (max-width: 768px) {
+  .all {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .food-item img {
+    margin-right: 0; /* Remove spacing between the image and text */
+
+}
+}
+
+/* Add this CSS to your styles */
+.category-item {
+  transform: translateY(100%);
+  /* Start offscreen */
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.category-item.animate {
+  transform: translateY(0);
+  /* Slide in when it becomes visible */
+  opacity: 1;
+}
+/* cont6act section */
+.contact{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+textarea {
+  width: 12rem;
+}
+
+form button {
+  width: 11rem;
+  margin: 2rem 0;
+  height: 1.7rem;
+}
+@media (max-width: 768px) {
+ 
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+}
+
+/* Chefs.css */
+.chef-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.firstchef {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.chef-column {
+  margin-bottom: 20px;
+ 
+}
+
+.chef-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.chef-item {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+@media (max-width: 768px) {
+
+.firstchef {
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+}
+
+
+/* services */
+.services{
+  display: flex;
+  justify-content: center;
+ 
+}
+@media (max-width: 768px) {
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+}
+.heading{
+  display: grid;
+  justify-content: center;
+}
+
+.services2 {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.images {
+  display: grid;
+  grid-template-columns: auto auto;
+ 
+  
+  justify-content: center;
+}
+.images img {
+  margin: 1rem;
+}
+@media (max-width: 768px) {
+
+  .about, .images {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+}
+
+/* contact */
+.image {
+    position: relative;
+      margin-left: 4rem;
+   
+      background-position: center;
+    
+    
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 0, 0.6); */
+        /* Adjust the opacity here (0.5 is 50%) */
+      }
+}

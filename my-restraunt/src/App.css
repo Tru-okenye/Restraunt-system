@@ -1,0 +1,302 @@
+body{
+    background-color: rgb(90, 46, 15);
+    
+    box-sizing: border-box;
+    
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    padding-left: 4rem;
+}
+
+.navbar{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.links:hover{
+    
+    
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    
+    
+    
+}
+
+
+
+
+
+
+.Homepage {
+    position: relative;
+margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 0;
+    height: 100vh;
+    background-image: url("../images/pexels-jonathan-borba-2878738\ \(2\).jpg");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    overflow: hidden;
+    border: 1px solid goldenrod;
+    border-radius: 4rem;
+&::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        /* Adjust the opacity here (0.5 is 50%) */
+    }
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: cornsilk;
+        
+
+}
+
+
+
+
+
+
+.moving-words {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    animation: moveWords 20s linear infinite;
+    background-color: rgb(82, 77, 52);
+        color: white;
+        margin-top: 2rem;
+}
+
+.animated-word {
+    margin-right: 4rem;
+    /* Adjust the spacing between words */
+    animation: moveWord 20s linear infinite;
+    transform: translateX(100%);
+    /* Start from the right edge */
+    animation-delay: calc(20s / var(--word-count) * (var(--i) - 1));
+    font-size: 3rem;
+
+}
+@keyframes moveWords {
+    0% {
+        transform: translateX(100%);
+        /* Start from the right edge */
+    }
+
+    20% {
+        transform: translateX(80%);
+        /* Move to the left edge */
+    }
+
+    25% {
+        transform: translateX(60%);
+        /* Pause 1 */
+    }
+
+    35% {
+        transform: translateX(60%);
+        /* Move out towards the left */
+    }
+
+    45% {
+        transform: translateX(40%);
+        /* Pause 2 */
+    }
+
+    55% {
+        transform: translateX(40%);
+        /* Move out towards the left */
+    }
+
+    65% {
+        transform: translateX(20%);
+        /* Pause 3 */
+    }
+
+    75% {
+        transform: translateX(20%);
+        /* Move out towards the left */
+    }
+
+    85% {
+        transform: translateX(0);
+        /* Pause 4 */
+    }
+
+    95% {
+        transform: translateX(0);
+        /* Move out towards the left */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move out towards the left */
+    }
+}
+@keyframes moveWord {
+    0% {
+        transform: translateX(100%);
+        /* Start from the right edge */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move out towards the left */
+    }
+}
+
+
+
+.Homepage {
+    animation: slideUp 5s ease both;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+:root {
+    box-sizing: border-box;
+    --transition: all 0.3s linear;
+    --clr-primary-5: hsl(205, 78%, 60%);
+}
+
+
+
+.sidebar-toggle {
+    
+    top: 2rem;
+    left: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+    display: none;
+}
+.sidebar-links{
+    top: 2rem;
+        left: 3rem;
+        font-size: 2rem;
+        background: transparent;
+        border-color: transparent;
+        display: none;
+ 
+}
+
+/* Define styles for smaller screens (for example, screens less than 768px wide) */
+@media (max-width: 768px) {
+    .sidebar-toggle {
+        display: block;
+        
+    }
+    .sidebar-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar{
+        display: none;
+    }
+}
+
+/* Define styles for the sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* Initially hidden */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    transition: all 3s linear;
+    z-index: 1;
+    animation: bounce 2s ease-in-out infinite;
+    }
+    
+    @keyframes bounce {
+        0% {
+            transform: scale(1);
+        }
+    
+        50% {
+            transform: scale(1.5);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+
+.show-sidebar {
+    right: 0;
+    /* Show the sidebar */
+}
+
+/* Add this to your CSS styles */
+.menu-link-container {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    z-index: 1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+}
+
+.menu-link-container:hover .dropdown-content {
+    display: block;
+    
+}
+.dropdown-item {
+    text-decoration: none;
+    
+}
+li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+.categorylinks {
+    display: grid;
+    justify-content: center;
+}
