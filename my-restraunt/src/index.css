@@ -189,7 +189,7 @@ background-color: brown;
     justify-content: center;
     align-items: center;
     height: 30vh;
-    background-color: red;
+    background-color: rgb(178, 182, 182);
 }
 /* Media query for smaller screens to display in a single column */
 @media (max-width: 768px) {
