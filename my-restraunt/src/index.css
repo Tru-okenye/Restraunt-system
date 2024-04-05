@@ -1,19 +1,41 @@
+:root {
+  --bg-color: #8B4513;
+  --second-bg-color: #FFD700;
+  --text-color: #ededed;
+  --main-color: #B22222; 
+
+}
+
+
+
+
 .about{
 display: grid;
-grid-template-columns: auto auto;
+grid-template-columns: 60% 40%;
 justify-content: center;
+background: var(--main-color);
 }
-/* .img{
+.img{
    
+margin-top: 2rem;
     
-} */
-.img img{
-    width: 100%;
-    height: 450px;
-    margin-top: 2rem;
 }
+.about-text{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 2rem;
+
+}
+/* .img img{
+    width: 100%;
+    height: 60%;
+    margin-top: 2rem;
+} */
 .services {
     margin-top: 2rem;
+    text-align: center;
+    background: var(--bg-color);
 }
 iframe{
     width: 100%;
@@ -182,6 +204,8 @@ background-color: brown;
   justify-content: center;
   align-items: center;
   height: 60vh;
+  background-color: rgb(178, 182, 182);
+  
   
 }
 .menu-headings {
@@ -259,15 +283,22 @@ form button {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
+ 
+}
+.chef-container p{
+  width: 50%;
+  margin-left: 10rem;
 }
 .firstchef {
   display: grid;
   grid-template-columns: auto auto;
+  color: var(--text-color);
 }
 
 .chef-column {
   margin-bottom: 20px;
- 
+
 }
 
 .chef-row {
@@ -275,6 +306,8 @@ form button {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 4rem;
+  background: var(--bg-color);
+  
 }
 
 .chef-item {
@@ -283,6 +316,8 @@ form button {
   padding: 10px;
   border: 1px solid #ddd;
   text-align: center;
+  color: var(--text-color);
+
 }
 @media (max-width: 768px) {
 
@@ -314,6 +349,7 @@ form button {
 .heading{
   display: grid;
   justify-content: center;
+  color: var(--second-bg-color);
 }
 
 .services2 {
@@ -326,12 +362,15 @@ form button {
 .images {
   display: grid;
   grid-template-columns: auto auto;
+  background: var(--main-color);
  
   
   justify-content: center;
 }
 .images img {
   margin: 1rem;
+ 
+ 
 }
 @media (max-width: 768px) {
 

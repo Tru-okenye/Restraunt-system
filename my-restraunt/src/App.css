@@ -1,5 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', 'sans-serif';
+    }
+    :root {
+        --bg-color: #8B4513;
+        --second-bg-color: #FFD700;
+        --text-color: #ededed;
+        --main-color: #B22222; 
+    
+    }
+
+
+
+
 body{
-    background-color: rgb(90, 46, 15);
+    background-color: var(--main-color);
     
     box-sizing: border-box;
     
@@ -7,13 +28,13 @@ body{
 
 .links{
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     padding: 1.5rem;
     padding-left: 4rem;
 }
 
 .navbar{
-    /* background-color: black; */
+    background: var(--bg-color);
     display: flex;
     justify-content: center;
    

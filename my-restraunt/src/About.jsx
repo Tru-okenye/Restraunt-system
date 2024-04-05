@@ -5,7 +5,7 @@ const About = () => {
 <>
 
   <div className='about'>
-    <div>
+    <div className='about-text'>
        <h3> WHO WE ARE</h3>
        <h1>A luxury restaurant with A rare taste you
 can’t find anywhere.</h1>
@@ -20,23 +20,19 @@ can’t find anywhere.</h1>
 <span>Truphy-Founder</span>
 </div>
 <div className='img'>
+<img src="https://images.pexels.com/photos/3769999/pexels-photo-3769999.jpeg?auto=compress&cs=tinysrgb&w=400 "/>
 
-<img src="https://i.pinimg.com/originals/08/12/8d/08128df1154d9e7b5a91b72584794428.jpg" />
+
 </div>
 </div>
    <h2 className='heading'>services</h2> 
 <div className='services'>
-   <h3>Lorem ipsum dolor sit amet.</h3>
-    <h3>Lorem ipsum dolor sit amet.</h3> 
-   <h3>Lorem ipsum dolor sit amet.</h3> 
-   <h3>Lorem ipsum dolor sit amet.</h3>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br></br> Quo et labore vel animi sunt,
+     ipsum porro voluptatum ratione laboriosam quas ad esse eum quisquam rem dicta, 
+     inventore nihil,<br></br> quasi laudantium a soluta vero fugit. Rerum rem,
+     nam fugiat beatae consectetur molestias vero laborum similique fuga consequuntur quam qui ratione quos.</p>
     </div>
-    <div className='services2'>
-   <h3>Lorem ipsum dolor sit amet.</h3>
-    <h3>Lorem ipsum dolor sit amet.</h3> 
-   <h3>Lorem ipsum dolor sit amet.</h3> 
-   <h3>Lorem ipsum dolor sit amet.</h3>
-    </div>
+  
     <div className="images">
       <img src="https://media.istockphoto.com/id/1081422898/photo/pan-fried-duck.jpg?b=1&s=612x612&w=0&k=20&c=E5YZ31t5xyOIaZ48S4U1sTnbVChrPo6YdRH1oJtRk8g=" />  
       <img src="https://media.istockphoto.com/id/1159992039/photo/cozy-restaurant-for-gathering-with-friends.jpg?b=1&s=612x612&w=0&k=20&c=TUKJQhGkJ0AZrt_2PLydrrCoTpByCbt50sHR1Kf-dxA=" />  
